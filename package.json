@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next dev --turbopack --hostname localhost",
     "build": "next build",
-    "start": "next start --hostname localhost",
+    "start": "next start --hostname 0.0.0.0",
     "setup": "tsx --env-file-if-exists=.env setup/create-agent.ts",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
