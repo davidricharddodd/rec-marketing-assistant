@@ -90,7 +90,7 @@ function Workspace() {
           <SidebarInset>
             <header className="flex h-12 shrink-0 items-center gap-2 border-b px-3">
               <SidebarTrigger />
-              <span className="text-muted-foreground text-sm">Claude Managed Agents × assistant-ui</span>
+              <span className="text-muted-foreground text-sm font-semibold">REC Marketing Assistant</span>
             </header>
             <div className="flex flex-1 flex-col overflow-hidden" style={{ ["--thread-max-width" as string]: "44rem" }}>
               <SessionStatusBar />

@@ -27,12 +27,12 @@ export function AnalystSidebar(props: React.ComponentProps<typeof Sidebar>) {
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <div>
-                <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                  <Sparkles className="size-4" />
+                <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-black text-[11px] tracking-wider leading-none shadow-md shadow-primary/20 select-none">
+                  REC
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-semibold">REC Marketing Assistant</span>
-                  <span className="text-muted-foreground text-xs">every chat is a session</span>
+                  <span className="font-semibold text-sidebar-foreground">REC Marketing Assistant</span>
+                  <span className="text-muted-foreground text-[10px]">every chat is a session</span>
                 </div>
               </div>
             </SidebarMenuButton>
@@ -44,9 +44,8 @@ export function AnalystSidebar(props: React.ComponentProps<typeof Sidebar>) {
       </SidebarContent>
       <SidebarRail />
       <SidebarFooter className="border-t p-3">
-        <p className="text-[11px] text-muted-foreground leading-relaxed">
-          Claude Managed Agents holds every conversation server-side; this list is{" "}
-          <code className="rounded bg-muted px-1">sessions.list()</code>. Nothing is stored here.
+        <p className="text-[10px] text-muted-foreground/80 leading-relaxed">
+          Powered by REC Managed Agents. All sessions are secure and stored server-side.
         </p>
       </SidebarFooter>
     </Sidebar>
