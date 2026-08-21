@@ -5,6 +5,8 @@ from anthropic import Anthropic
 
 # Load environment variables from .env
 load_dotenv()
+if not os.environ.get("ANTHROPIC_API_KEY"):
+    load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "../.env"))
 
 def main():
     api_key = os.environ.get("ANTHROPIC_API_KEY")
